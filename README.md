@@ -5,23 +5,24 @@
 This project focuses on **developing a music decomposition system** that utilizes deep learning techniques to separate composite audio into distinct components, such as **vocals, bass, drums, and others**. The system is designed to enhance applications in music production, remixing, and audio analysis by providing high-quality audio separation.
 
 ## Features
-
 - **Hybrid Model Architecture**: Utilizes a combination of time-domain and spectrogram-domain processing with Transformer layers for superior audio separation. Our model is has an overall SDR / NSDR of 4.54 / 4.93.
 - **Web Application**: A user-friendly interface built with Streamlit allows users to upload audio files and download separated components using our own model.
 - **Google Colab Integration**: Provides a comprehensive notebook for training and evaluating the model, facilitating easy replication and experimentation.
 
+## Trained Dataset
+- **MUSDB18HQ**: The model is trained on the [MUSDB18HQ](https://sigsep.github.io/datasets/musdb.html#musdb18-hq-uncompressed-wav), a widely used benchmark in music source separation. This dataset includes high-quality music tracks with isolated stems for vocals, bass, drums, and other instruments, enabling effective training and evaluation of the model.
+
+
+## Setup Instructions
 1. **Run the Streamlit Application**:
-   - Download the "MCS14_Web_App.ipynb" file or open it directly in [Google Colab](https://colab.research.google.com/drive/1UTlQGmp50IhMLSsw3EFR_7rMIRpCJuMp?usp=sharing).
+   - Click on the link: [Google Colab](https://colab.research.google.com/drive/1UTlQGmp50IhMLSsw3EFR_7rMIRpCJuMp?usp=sharing).
    - Execute the cells to start the Streamlit server and access the application via the provided URL.
 
 2. **Training the Model**:
-   - Download the "MCS14_Train_Evaluation.ipynb" file or open it directly in [Google Colab](https://colab.research.google.com/drive/1ExGalxkGIPy-M-c7e8co3bkUUsSP8CeD?usp=sharing).
+   - Click on the link: [Google Colab](https://colab.research.google.com/drive/1ExGalxkGIPy-M-c7e8co3bkUUsSP8CeD?usp=sharing).
    - Follow the instructions to set up the environment, upload datasets, and train the model.
 
 ## Requirements
-
-### Hardware
-
 - **For Music Separation**: Google Colab (Free Version) with at least 12 GB of RAM.
 - **For Model Training**: Google Colab Pro+ with A100 GPU, 83.5 GB of RAM, and 235.7 GB of Disk Space.
 
